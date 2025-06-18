@@ -14,14 +14,14 @@ pytest tests/test_main.py -v
 - py main.py --file example.csv --where "brand=xiaomi" --aggregate "rating=avg"
 
 ### Как добавить новые методы
-c = CSVReader()
-c.add_aggregation('name', func)
-c.read()
+c = CSVReader()  
+c.add_aggregation('name', func)  
+c.read()  
   
 ### Как изменить текущие методы
-c = CSVReader()
-c.set_aggregation('name', func)
-c.read()
+c = CSVReader()  
+c.set_aggregation('name', func)  
+c.read()  
 
 ### FAQ
 - Методы добавляются в класс CSVReader
